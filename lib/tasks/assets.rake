@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 task 'assets:precompile:before' do
+  Rake::Task["db:migrate"].invoke
 
   require 'uglifier'
   require 'open3'
