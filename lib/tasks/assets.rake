@@ -1,4 +1,5 @@
 task 'assets:precompile:before' do
+  Rake::Task["db:migrate"].invoke
 
   require 'uglifier'
   require 'open3'
