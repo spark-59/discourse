@@ -5,7 +5,7 @@ if ENV['RAILS_ENV'] == 'production'
 
   # Second, you can choose how many threads that you are going to run at same time.
   workers "#{num_workers}"
-  threads 8, 32
+  threads 4, 12
 
   # Unless you know what you are changing, do not change them.
   preload_app!
